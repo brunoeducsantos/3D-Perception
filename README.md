@@ -20,8 +20,6 @@ $ cd ~/catkin_ws/
 $ catkin_make
 ```
 
-### Note: If you have the Kinematics Pick and Place project in the same ROS Workspace as this project, please remove the 'gazebo_grasp_plugin' directory from the `RoboND-Perception-Project/` directory otherwise ignore this note. 
-
 Now install missing dependencies using rosdep install:
 ```sh
 $ cd ~/catkin_ws
@@ -57,11 +55,20 @@ Once Gazebo is up and running, make sure you see following in the gazebo world:
 - Dropboxes on either sides of the robot
 
 
-Afterwards, to generate the labels for each object you run the following command:
+Afterwards, to run the pipeline and generate the labels for each object you run the [3dperception.py](https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/pr2_robot/scripts/3dperception.py) script:
 ```
-$ rosrun pr2_robot project_template.py
+$ rosrun pr2_robot 3dperception.py
 ```
-
+Finally, to generate the data to traing SVM model you should also clone [sensor_stick](https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/sensor_stick) ROS package as follows:
+```sh
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/sensor_stick
+$ cd ~/catkin/
+$ catkin_make
+$ source devel/setting.bash
+$roslaunch sensor_stick training.launch
+$rosrun sensor_stick capture_features.py
+```
 
 # Disclamer
 This project was clone from Udacity perception project in the context of [Robotics Software Engineer nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209):
@@ -70,16 +77,3 @@ This project was clone from Udacity perception project in the context of [Roboti
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/udacity/RoboND-Perception-Project.git
 ```
-
-
-# Required Steps for a Passing Submission:
-1. Extract features and train an SVM model on new objects (see `pick_list_*.yaml` in `/pr2_robot/config/` for the list of models you'll be trying to identify). 
-2. Write a ROS node and subscribe to `/pr2/world/points` topic. This topic contains noisy point cloud data that you must work with.
-3. Use filtering and RANSAC plane fitting to isolate the objects of interest from the rest of the scene.
-4. Apply Euclidean clustering to create separate clusters for individual items.
-5. Perform object recognition on these objects and assign them labels (markers in RViz).
-6. Calculate the centroid (average in x, y and z) of the set of points belonging to that each object.
-7. Create ROS messages containing the details of each object (name, pick_pose, etc.) and write these messages out to `.yaml` files, one for each of the 3 scenarios (`test1-3.world` in `/pr2_robot/worlds/`).  See the example `output.yaml` for details on what the output should look like.  
-8. Submit a link to your GitHub repo for the project or the Python code for your perception pipeline and your output `.yaml` files (3 `.yaml` files, one for each test world).  You must have correctly identified 100% of objects from `pick_list_1.yaml` for `test1.world`, 80% of items from `pick_list_2.yaml` for `test2.world` and 75% of items from `pick_list_3.yaml` in `test3.world`.
-9. Congratulations!  Your Done!
-
