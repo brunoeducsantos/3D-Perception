@@ -1,10 +1,10 @@
 # 3D-Perception
-Perception pipeline of 3D model to feed PR2 robot in ROS
-[![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
-# 3D Perception
-Before starting any work on this project, please complete all steps for [Exercise 1, 2 and 3](https://github.com/udacity/RoboND-Perception-Exercises). At the end of Exercise-3 you have a pipeline that can identify points that belong to a specific object.
+![demo-1](https://user-images.githubusercontent.com/20687560/28748231-46b5b912-7467-11e7-8778-3095172b7b19.png)
 
-In this project, you must assimilate your work from previous exercises to successfully complete a tabletop pick and place operation using PR2.
+The goals of this project are:
+- creating a processing pipeline of the point clouds of objects on a tabletop using RGB-D sensor in ROS
+- Labeling objects using SVM
+- pick objects and place on a dropbox using PR2 robotic arms in ROS
 
 The PR2 has been outfitted with an RGB-D sensor much like the one you used in previous exercises. This sensor however is a bit noisy, much like real sensors.
 
