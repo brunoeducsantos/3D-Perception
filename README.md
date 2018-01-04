@@ -77,7 +77,7 @@ $rosrun sensor_stick capture_features.py
 
 
 # Disclamer
-This project was clone from [Udacity perception project](https://github.com/udacity/RoboND-Perception-Project) in the context of [Robotics Software Engineer nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209).
+This project was cloned from [Udacity perception project](https://github.com/udacity/RoboND-Perception-Project) in the context of [Robotics Software Engineer nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209).
 
 # TODO
 - Create a collision map of objects on toptable
