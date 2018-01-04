@@ -1,13 +1,18 @@
 # 3D-Perception
 ![demo-1](https://user-images.githubusercontent.com/20687560/28748231-46b5b912-7467-11e7-8778-3095172b7b19.png)
 
+This project aims to create a node and several topics to a rgb-d camera node in ROS to perform a perception pipeline of collected point cloud containing a series of objects in a [ROS](http://www.ros.org/)  environment.
+The ROS [ROS](http://www.ros.org/) setup environment includes:
 
-The PR2 has been outfitted with an RGB-D sensor where point cloud data is bit noisy, much like real sensors.
+- Robot
 
-The goals of this project are:
-- creating a perception pipeline of the point clouds of objects on a tabletop using RGB-D sensor in [ROS](http://www.ros.org/)
-- Labeling objects using SVM
-- pick objects and place on a dropbox using PR2 robotic arms in [ROS](http://www.ros.org/) 
+- Table arrangement
+
+- Three target objects on the table
+
+- Dropboxes on either sides of the robot
+
+In addition, this project aims to label the perceived objects and pick them using PR2 robotic arms. After picking the object , it will be placed in the closest dropbox. 
 
 
 # Project Setup
@@ -39,7 +44,7 @@ If you haven’t already, following line can be added to your .bashrc to auto-so
 ```
 source ~/catkin_ws/devel/setup.bash
 ```
-
+# Usage 
 To run the the project, you should select first one of three scenarios in *pick_place_project.launch* file and launchg gazebo as follows: 
 ```
 $ roslaunch pr2_robot pick_place_project.launch
@@ -70,10 +75,12 @@ $roslaunch sensor_stick training.launch
 $rosrun sensor_stick capture_features.py
 ```
 
-# Disclamer
-This project was clone from Udacity perception project in the context of [Robotics Software Engineer nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209):
 
-```sh
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/udacity/RoboND-Perception-Project.git
-```
+# Disclamer
+This project was clone from Udacity perception project in the context of [Robotics Software Engineer nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209).
+
+# TODO
+- Create a collision map of objects on toptable
+- Finetune pick and place trajectory
+
+
