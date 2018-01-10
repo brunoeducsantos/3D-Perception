@@ -1,10 +1,10 @@
 ## Project: Perception Pick & Place
-[point cloud after outliers removal]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outliersremoval.PNG
-[initial point cloud]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/initialPC.PNG
-[voxel grid downsampling result]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/voxelgrid.PNG
-[pass through filter result]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/pass.PNG
-[RANSAC segmentation]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/ransac.PNG
-[separate objects on the table]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/euclidean_clustering.PNG
+[point cloud after outliers removal]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/outliersremoval.PNG
+[initial point cloud]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/initialPC.PNG
+[voxel grid downsampling result]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/voxelgrid.PNG
+[pass through filter result]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/pass.PNG
+[RANSAC segmentation]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/ransac.PNG
+[separate objects on the table]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/euclidean_clustering.PNG
 [confusion matrix]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/normalizedconfusionmatrix.PNG
 [label object 3]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/LabelObjects.PNG
 [label object 2]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/labelobjects2.PNG
