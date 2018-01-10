@@ -74,7 +74,7 @@ $ source devel/setting.bash
 $roslaunch sensor_stick training.launch
 $rosrun sensor_stick capture_features.py
 ```
-# Implementation/design of perception pipeline 
+# Implementation
 
 [point cloud after outliers removal]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/outliersremoval.PNG
 [initial point cloud]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/initialPC.PNG
