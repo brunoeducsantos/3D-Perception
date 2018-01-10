@@ -5,10 +5,10 @@
 [pass through filter result]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/pass.PNG
 [RANSAC segmentation]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/ransac.PNG
 [separate objects on the table]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/euclidean_clustering.PNG
-[confusion matrix]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/normalizedconfusionmatrix.PNG
-[label object 3]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/LabelObjects.PNG
-[label object 2]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/labelobjects2.PNG
-[label object 1]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/LabelObjects1.PNG
+[confusion matrix]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/normalizedconfusionmatrix.PNG
+[label object 3]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/LabelObjects.PNG
+[label object 2]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/labelobjects2.PNG
+[label object 1]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/LabelObjects1.PNG
 [output_1.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/output_1.yaml
 [output_2.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/outputs/output_2.yaml
 [output_3.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/output_3.yaml
