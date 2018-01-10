@@ -1,18 +1,18 @@
 ## Project: Perception Pick & Place
-[point cloud after outliers removal]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/outliersremoval.PNG
-[initial point cloud]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/initialPC.PNG
-[voxel grid downsampling result]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/voxelgrid.PNG
-[pass through filter result]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/pass.PNG
-[RANSAC segmentation]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/ransac.PNG
-[separate objects on the table]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/euclidean_clustering.PNG
-[confusion matrix]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/normalizedconfusionmatrix.PNG
-[label object 3]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/LabelObjects.PNG
-[label object 2]:https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/labelobjects2.PNG
-[label object 1]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/LabelObjects1.PNG
-[output_1.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/outputs/output_1.yaml
-[output_2.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/outputs/output_2.yaml
-[output_3.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/outputs/output_3.yaml
-[model]: https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/outputs/model.sav
+[point cloud after outliers removal]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outliersremoval.PNG
+[initial point cloud]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/initialPC.PNG
+[voxel grid downsampling result]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/voxelgrid.PNG
+[pass through filter result]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/pass.PNG
+[RANSAC segmentation]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/ransac.PNG
+[separate objects on the table]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/euclidean_clustering.PNG
+[confusion matrix]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/normalizedconfusionmatrix.PNG
+[label object 3]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/LabelObjects.PNG
+[label object 2]:https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/labelobjects2.PNG
+[label object 1]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/LabelObjects1.PNG
+[output_1.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/output_1.yaml
+[output_2.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/outputs/output_2.yaml
+[output_3.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/output_3.yaml
+[model]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/model.sav
 ### Pipeline to process input data cloud from RGB-D camera 
 #### 1. Pipeline for filtering and RANSAC plane fitting implemented
 During this first stage of input data cloud pre-processing the following filtering processes were applied:
