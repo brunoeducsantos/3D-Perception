@@ -97,7 +97,6 @@ Finally, for test3.world we obtained:
 
 Using the existing ros node that communicates with my perception pipeline to perform sequential object recognition, we obtain requests into [output_1.yaml], [output_2.yaml], and [output_3.yaml] for each scene respectively.
 
-Spend some time at the end to discuss your code, what techniques you used, what worked and why, where the implementation might fail and how you might improve it if you were going to pursue this project further. 
 Finally, some improvements on the code should be better outlier removal in order to improve our model prediction . In addition, a ROS node should have been created specific to object labeling. The next steps would be:
 * create a new scenario 
 * test my model on a new scenario  
