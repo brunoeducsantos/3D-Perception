@@ -90,11 +90,19 @@ $rosrun sensor_stick capture_features.py
 [output_2.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/outputs/output_2.yaml
 [output_3.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/output_3.yaml
 [model]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/model.sav
+The contributions to this project were developed in the following files:
+* [Perception pipeline and labeling model](https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/pr2_robot/scripts/3dperception.py)
+* [Features to train the model: colors and normals](https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/sensor_stick/scripts/capture_features.py)
+In the following sections will be addressed the approach taken to:
+* perform the perception pipeline
+* generate features to training dataset  
+* train the predictive model
+
 
 ### Pipeline to process input data cloud from RGB-D camera 
 #### 1. Pipeline for filtering and RANSAC plane fitting implemented
 During this first stage of input data cloud pre-processing the following filtering processes were applied:
-* Outliers removal
+* [Statistical outlier removal](http://pointclouds.org/documentation/tutorials/statistical_outlier.php)
 * Voxel grid downsampling
 * Pass through filtering
 * Plane fitting using RANSAC
