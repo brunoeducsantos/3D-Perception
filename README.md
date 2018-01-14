@@ -91,8 +91,11 @@ $rosrun sensor_stick capture_features.py
 [output_3.yaml]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/output_3.yaml
 [model]: https://github.com/BrunoEduardoCSantos/3D-Perception/tree/master/PR2-PERCEPTION/outputs/model.sav
 The contributions to this project were developed in the following files:
+
 * [Perception pipeline and labeling model](https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/PR2-PERCEPTION/pr2_robot/scripts/3dperception.py)
 * [Features to train the model: colors and normals](https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/sensor_stick/scripts/capture_features.py)
+* [Predictive model](https://github.com/BrunoEduardoCSantos/3D-Perception/blob/master/sensor_stick/scripts/train_svm.py)
+
 In the following sections will be addressed the approach taken to:
 * perform the perception pipeline
 * generate features to training dataset  
@@ -103,9 +106,9 @@ In the following sections will be addressed the approach taken to:
 #### 1. Pipeline for filtering and RANSAC plane fitting implemented
 During this first stage of input data cloud pre-processing the following filtering processes were applied:
 * [Statistical outlier removal](http://pointclouds.org/documentation/tutorials/statistical_outlier.php)
-* Voxel grid downsampling
+* [Voxel grid downsampling](http://pointclouds.org/documentation/tutorials/voxel_grid.php)
 * Pass through filtering
-* Plane fitting using RANSAC
+* Plane fitting using [RANSAC](https://www.wikiwand.com/en/Random_sample_consensus)
 
 Outliers removal was applied to the cloud due to some points over the objects as we can tell from the [initial point cloud].
 
@@ -156,7 +159,7 @@ After segmentation process we obtain [separate objects on the table].
 
 ![alt_text][separate objects on the table]
 
-#### 2.  Features extracted and SVM trained &  Object recognition implementation
+#### 2.  Features extraction and SVM trained &  Object recognition implementation
 
 In order to predict the labels of the point cloud objects we used as features the **normals** and **colors** of associated to each point of object point cloud. After having the dataset for each object we train a SVM model to predict the its label. For this purpose a **linear kernel** with a tradoff parameter **C=0.55**. Training on our test dataset we obtain the following [confusion matrix].
 
