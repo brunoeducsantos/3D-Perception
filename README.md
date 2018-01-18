@@ -1,8 +1,9 @@
 # 3D-Perception
 ![demo-1](https://user-images.githubusercontent.com/20687560/28748231-46b5b912-7467-11e7-8778-3095172b7b19.png)
 
-This project aims to create a node and several topics to a rgb-d camera node in ROS to perform a perception pipeline of collected point cloud containing a series of objects in a [ROS](http://www.ros.org/)  environment.
-The ROS [ROS](http://www.ros.org/) setup environment includes:
+This project main goal is performing a perception pipeline to identify objects using a RGB-D camera in a [ROS](http://www.ros.org/) as well to pick objects using PR2 robotic arms.
+
+The  [ROS](http://www.ros.org/) setup environment includes:
 
 - Robot
 
@@ -11,9 +12,6 @@ The ROS [ROS](http://www.ros.org/) setup environment includes:
 - Three target objects on the table
 
 - Dropboxes on either sides of the robot
-
-In addition, this project aims to label the perceived objects and pick them using PR2 robotic arms. After picking the object , it will be placed in the closest dropbox. 
-
 
 # Project Setup
 For this setup, catkin_ws is the name of active ROS Workspace, if your workspace name is different, change the commands accordingly
